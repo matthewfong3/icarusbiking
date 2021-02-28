@@ -1,0 +1,39 @@
+{
+  "name": "icarus-biking",
+  "version": "1.0.0",
+  "engines": {
+    "node": "14.4.0",
+    "npm": "6.14.5"
+  },
+  "description": "Icarus Biking form project",
+  "main": "./server/server.js",
+  "scripts": {
+    "test": "echo \"No Tests\"",
+    "start": "node ./server/server.js",
+    "buildHomeBundle": "babel ./client/index.js --presets react out-file ./hosted/bundle.js",
+    "buildSurveyBundle": "babel ./client/survey.js --presets react out-file ./hosted/survey.js",
+    "watchHomeBundle": "babel --watch ./client/index.js --presets react --out-file ./hosted/bundle.js",
+    "watchSurveyBundle": "babel --watch ./client/survey.js --presets react --out-file ./hosted/survey.js",
+    "nodemon": "nodemon --watch ./server ./server/server.js"
+  },
+  "author": "Matthew Fong",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "express-session": "^1.17.1",
+    "nodemailer": "^6.4.16"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^2.0.7"
+  }
+}

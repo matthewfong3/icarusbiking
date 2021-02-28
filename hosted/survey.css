@@ -1,0 +1,193 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  border-bottom: 1px solid white;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+nav ul{
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+  width: 50%;
+  padding-top: 1em;
+}
+
+nav ul li{
+  display: inline;
+  font-size: 1.5em;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+nav #logo{
+  float: left;
+  width: 82px;
+}
+
+#surveyContent {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 120px;
+  background-color: #333;
+  color: white;
+  border-radius: 6px;
+}
+
+#surveyContent h1 {
+  padding-top: 60px;
+}
+
+#surveyContent h1, h2 {
+  text-align: center;
+}
+
+#surveyContent #content{
+  font-size: 22px;
+  width: 100%;
+}
+
+
+#surveyContent #content .formSection {
+  padding: 0;
+  margin: 0 auto;
+  width: 90%;
+}
+
+#surveyContent #content .formSection label, #surveyContent #content .formSection input {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#surveyContent #content .formSection #verySatisfied, #surveyContent #content .formSection #satisfied, #surveyContent #content .formSection #neutral, #surveyContent #content .formSection #unsatisfied, #surveyContent #content .formSection #veryUnsatisfied{
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
+}
+
+#surveyContent #content .formSection #Yes, #surveyContent #content .formSection #No{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#surveyContent #content .formSection #verySatisfied, #surveyContent #content .formSection #Yes {
+  margin-top: 20px;
+}
+
+#surveyContent #content .formSection #product {
+  padding: 5px;
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#surveyContent #content .formSection #date {
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+} 
+
+#surveyContent #content .formSection #email, #surveyContent #content .formSection #address1, #surveyContent #content .formSection #address2, #surveyContent #content .formSection #city, #surveyContent #content .formSection #sp, #surveyContent #content .formSection #postal, #surveyContent #content .formSection #orderNum, #surveyContent #content .formSection #firstName, #surveyContent #content .formSection #lastName {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 300px;
+}
+
+#surveyContent #content .formSection #firstNameSpan{
+  float: left;
+  width: 50%;
+}
+
+#surveyContent #content .formSection #lastNameSpan{
+  float: right;
+  width: 50%;
+}
+
+#surveyContent #content .formSection #break{
+  clear: both;
+}
+
+#surveyContent #content .formSection #address1, #surveyContent #content .formSection #address2, #surveyContent #content .formSection #postal{
+  
+}
+
+#surveyContent #content .formSection #prize {
+  padding: 5px;
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#surveyContent #content .formSection #feedback {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+#surveyContent #content .formSection #citySpan{
+  /*float: left;
+  width: 50%;*/
+}
+
+#surveyContent #content .formSection #spSpan{
+  /*float: right;
+  width: 50%;*/
+}
+
+#surveyContent #content .formSection #postal{
+  clear: both;
+}
+
+#surveyContent #content .formSection .buttonContainer{
+  text-align: center;
+  width: 100%;
+}
+
+#surveyContent #content .formSection .nextBtn, #surveyContent #content .formSection .submitBtn {
+  border-radius: 6px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 18px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+#surveyContent #content .formSection .submitBtn{
+  margin-top: 10px;
+}
+
+#surveyContent #content .formSection .amazonLink {
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 6px;
+  background-color: #eee;
+}
+
+#surveyContent #content .formSection .amazonLink:visited {
+  color: black;
+}
+
+#surveyContent #content .formSection #desc{
+  width: 90%;
+}

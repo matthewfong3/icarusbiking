@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Icarus Biking</title>
+  <script crossorigin src="https://unpkg.com/react@15/dist/react.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+  <script crossorigin src="https://unpkg.com/prop-types/prop-types.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.6.2/remarkable.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/assets/style.css"/>
+</head>
+<body>
+  <nav>
+    <a href="/">
+      <img id="logo" src="/assets/img/icarusbikelogo.png" alt="logo icon"/>
+    </a>
+    
+    <ul>
+      <li><a id="homeAnchor" href="/">Home</a></li>
+      <li><a id="surveyAnchor" href="/survey">Survey</a></li>
+      <li><a id="contactAnchor" href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+  
+  <div id="homeContentContainer">
+    <div id="homeContent">
+      <h1>Welcome to Icarus Biking! </h1>
+      <h2>Please fill out the survey below to receive your free prize!</h2>
+      <button id="startSurveyButton">Click Here To Begin!</button>
+    </div>
+  </div>
+  
+  <footer id="contact">
+    <h1>Contact Us</h1>
+    <h4>
+      Email: support@icarusbiking.com
+    </h4>
+    
+    <form id="writeToUsForm"
+      method="POST"
+      action="/writeToUs"
+      class="surveyForm"
+    >
+      <input type="text" id="userEmail" name="userEmail" placeholder="Enter your email"/><br/>
+      <textarea id="comments" name="comments" cols="90" rows="10" placeholder="Comments" style="resize: none;"></textarea>
+      <br/>
+      <button id="writeToUsSubmit" className="submitBtn">Submit</button>
+    </form>
+  </footer>
+  
+  <script src="/assets/bundle.js"></script>
+</body>
+</html>

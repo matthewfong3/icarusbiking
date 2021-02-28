@@ -6,15 +6,15 @@
     "npm": "6.14.5"
   },
   "description": "Icarus Biking form project",
-  "main": "./server/server.js",
+  "main": "./server/app.js",
   "scripts": {
     "test": "echo \"No Tests\"",
-    "start": "node ./server/server.js",
+    "start": "node ./server/app.js",
     "buildHomeBundle": "babel ./client/index.js --presets react out-file ./hosted/bundle.js",
     "buildSurveyBundle": "babel ./client/survey.js --presets react out-file ./hosted/survey.js",
     "watchHomeBundle": "babel --watch ./client/index.js --presets react --out-file ./hosted/bundle.js",
     "watchSurveyBundle": "babel --watch ./client/survey.js --presets react --out-file ./hosted/survey.js",
-    "nodemon": "nodemon --watch ./server ./server/server.js"
+    "nodemon": "nodemon --watch ./server ./server/app.js"
   },
   "author": "Matthew Fong",
   "license": "ISC",
